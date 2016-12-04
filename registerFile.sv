@@ -25,11 +25,18 @@ module registerFile(input logic [4:0] A1,
 
    mux4to1B32 mpxA2(A2[1],A2[0],32'b101010,32'b111111,reg1, reg0, RD2);
 
+		
    
    always @ (negedge CLK)
      begin
 	$display("register 0 %h ",reg0);
 	$display("register 1 %h ",reg1);
+	     $display("register 2 %h ",reg2);
+	     $display("register 3 %h ",reg3);
+	     $display("register 4 %h ",reg4);
+	     $display("register 5 %h ",reg5);
+	     $display("register 6 %h ",reg6);
+	     $display("register 7 %h ",reg7);
      end
    
 endmodule
