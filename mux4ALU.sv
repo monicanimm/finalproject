@@ -8,7 +8,7 @@
    		parameter F=6'b100110;//nor
   		parameter H=6'b000100;//not
 
-		mux2 lowmux (d0, d1, s[0], low);
-		mux2 highmux (d2, d3, s[0], high);
-		mux2 finalmux(low, high, s[1], y);
+		mux2ALU lowmux (d0, d1, s[0], low);
+		mux2ALU highmux (d2, d3, s[0], high);
+		mux2ALU finalmux(low, high, s[1], y);
 	endmodule
