@@ -31,8 +31,7 @@ module ALU(input logic  [31:0] I1,
 	assign rolv = 0;
 	assign rorv = 0;
 	assign bleu = 0;
-   mux4to1B5 
-   
+	   
     
    //assign sum = I1 + I2;
    
