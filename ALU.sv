@@ -14,6 +14,9 @@ module ALU(input logic  [31:0] I1,
    parameter A=6'b1000000;//add 
    parameter F=6'b100110;//nor
    parameter H=6'b000100;//not
+		//rolv
+	//rorv
+	//bleu
 
  
    /*case(Selector)
