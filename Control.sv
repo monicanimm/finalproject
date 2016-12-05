@@ -14,13 +14,15 @@ module Control(ins, memWrite, regWriteEnable, alu4, alu3, alu2, alu1, alu0);
    assign alu1 = 1'b0;
    assign alu0 = 1'b0;
    assign alu2 = 1'b0;
-   assign alu3 = 1'b0;
-   assign alu4 = 1'b0;
+   //assign alu3 = 1'b0;
+   //assign alu4 = 1'b0;
    // or statements, encode each bit to mean a certain instruction.
-   // add: 00001
-   // nor: 00011
-   // 
-   
+   // add: 000
+   // not: 001
+   // nor: 011
+   // bleu: 010
+   // rolv: 100
+   // rorv: 101
    
    assign regWriteEnable = lw;
 
