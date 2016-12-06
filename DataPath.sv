@@ -57,6 +57,7 @@ module DataPath(clock, pcQ, instr, pcD, regWriteEnable);
 
    logic [0:0] 	memWrite, alu4, alu3, alu2, alu1, alu0;
    
+	
    
    Control theControl(instr, memWrite, regWriteEnable, alu4, alu3, alu2, alu1, alu0);
    
@@ -93,14 +94,16 @@ module DataPath(clock, pcQ, instr, pcD, regWriteEnable);
    assign SrcA=RD1; //modification
    assign SrcB=SignImm;
    
-   ALU theALU(SrcA, SrcB, 5'b0, ALUResult);
+	ALU theALU(SrcA, SrcB, selector1,selector2,selector3, ALUResult);
 
 
    
    
    logic [31:0]        WD,dataA;
    logic [0:0] 	       WE;
-
+	assign selector1=alu0;
+	assign selector2=alu1;
+	assign selector3=alu2;
    assign dataA=ALUResult;
    
    dataMemory data(dataA, RD, WD, clk, WE);
