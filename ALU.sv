@@ -37,7 +37,7 @@ module ALU(input logic  [31:0] I1,
 	assign selector2=C1;
 	assign selector3=C2;
 	
-	mux8to1B32 mux0(C2,C1,C0,add,nor,not,rolv,rorv,bleu,32'b0,32'b0,ALUResult);
+	mux8to1B32 mux0(C2,C1,C0,add,nor,not,rolv,rorv,bleu,32'b0,32'b0,result);
    //assign sum = I1 + I2;
    
    assign ALUResult = result;
