@@ -1,4 +1,4 @@
-module mux8to1B32 (input logic C2,input logic C1, input logic C0, input logic [31:0] I3, 
+module mux8to1B32 (input logic C2,input logic C1, input logic C0, input logic[31:0] I7,input logic[31:0] I6,input logic [31:0] I5, input logic [31:0] I4,input logic [31:0] I3, 
 	input logic[31:0] I2, input logic [31:0] I1, 
 	input logic [31:0] I0, output logic [31:0] O);
 
