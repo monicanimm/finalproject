@@ -1,5 +1,5 @@
 
-module mux8to1B4 (input logic C2, input logic C1, input logic C0, input logic [3:0] I7, input logic [3:0] I6, input logic [3:0] I5, input logic [3:0] I4, input logic [3:0] I3, 
+module mux8to1B4 (input logic C2, input logic C1, input logic C0, input logic [7:4] I7, input logic [7:4] I6, input logic [7:4] I5, input logic [7:4] I4, input logic [3:0] I3, 
 	input logic[3:0] I2, input logic [3:0] I1, 
 	input logic [3:0] I0, output logic [3:0] O);
 
